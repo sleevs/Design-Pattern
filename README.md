@@ -5,3 +5,37 @@ de trabalhos de maneira que possa amadurecer a compreensão sobre padrões de pr
 
 This repository aims to support research in software engineering and maintain a continuous flow of work in order 
 to mature the understanding of design patterns and application architecture.
+
+
+
+Creational patterns
+
+    Factory - TODO
+    Abstract factory - 
+    Builder - 
+    Prototype - TODO
+    Singleton - TODO
+
+Structural patterns
+
+    Adapter - 
+    Bridge - 
+    Composite - TODO
+    Decorator - TODO
+    Facade - TODO
+    Flyweight - TODO
+    Proxy - TODO
+
+Behavioral patterns
+
+    Chain of responsibility - TODO
+    Command - TODO
+    Iterator - TODO
+    Mediator - TODO
+    Memento - TODO
+    Observer - TODO
+    State - TODO
+    Strategy - TODO
+    Template method - TODO
+    Visitor - TODO
+
