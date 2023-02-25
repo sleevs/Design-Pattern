@@ -13,8 +13,11 @@ to mature the understanding of design patterns and application architecture.
   -  Factory - TODO
   
   -  Abstract factory  
-      Framework for a GUI environment were windows will be drawn on a display device.
-      The framework will support many OS . Each OS will have dedicated factory for creation of the                             graphical abstractions. 
+     This pattern  Provides an interface for creating families of related or dependet objects without 
+     specifying the concrete classes.
+  
+     [The example is a framework for a GUI environment where windows will be drawn on different operating systems.
+     Each OS will have a dedicated factory for creating graphic abstractions.](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp)
   
   -  Builder - 
   
