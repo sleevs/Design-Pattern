@@ -8,34 +8,34 @@ to mature the understanding of design patterns and application architecture.
 
 
 
-(#Creational patterns)
+### Creational patterns
 
-    Factory - TODO
-    Abstract factory - 
-    Builder - 
-    Prototype - TODO
-    Singleton - TODO
+  -  Factory - TODO
+  -  Abstract factory - 
+  -  Builder - 
+  -  Prototype - TODO
+  -  Singleton - TODO
 
-Structural patterns
+### Structural patterns
 
-    Adapter - 
-    Bridge - 
-    Composite - TODO
-    Decorator - TODO
-    Facade - TODO
-    Flyweight - TODO
-    Proxy - TODO
+  -  Adapter - TODO
+  -  Bridge - 
+  -  Composite - 
+  -  Decorator - 
+  -  Facade - 
+  -  Flyweight - 
+  -  Proxy - TODO
 
-Behavioral patterns
+### Behavioral patterns
 
-    Chain of responsibility - TODO
-    Command - TODO
-    Iterator - TODO
-    Mediator - TODO
-    Memento - TODO
-    Observer - TODO
-    State - TODO
-    Strategy - TODO
-    Template method - TODO
-    Visitor - TODO
+  -  Chain of responsibility - 
+  -  Command - 
+  -  Iterator - 
+  -  Mediator - 
+  -  Memento - 
+  -  Observer - 
+  -  State - TODO
+  -  Strategy - TODO
+  -  Template method - TODO
+  -  Visitor - TODO
 
