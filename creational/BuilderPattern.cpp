@@ -4,20 +4,20 @@
 #include <stdio.h>  
 #include <stdlib.h> 
 
-class Product{
+class ProductNotification{
 	
 	public:
-		std::vector<std::string> parts_;
+		std::vector<std::string> itens;
 		
-		void ListPart() const{
-		std::cout << "PRODUCT PARTS: " ;
-		for(size_t i=0 ; i < parts_.size() ; i++){
+		void listItens() const{
+		std::cout << " NOTIFICATION PARTS : " ;
+		for(size_t i=0 ; i < itens.size() ; i++){
 			
-			if(parts_[i] == parts_.back()){
+			if(itens[i] == itens.back()){
 			   
-			   std::cout << parts_[i];
+			   std::cout << itens[i];
 			}else{
-				std::cout << parts_[i] << " , " ;
+				std::cout << itens[i] << " , " ;
 			}			
 		}
 		std::cout << "\n\n";
@@ -30,9 +30,11 @@ class Product{
 class Builder{
 	public:
 		virtual ~Builder(){}
-		virtual void ProducerParteA() const = 0 ;
-		virtual void ProducerParteB() const = 0 ;
-		virtual void ProducerParteC() const = 0 ;
+		virtual void getAlert() const = 0 ;
+		virtual void getMessage() const = 0 ;
+		virtual void getDialog() const = 0 ;
+		virtual void getEmail() const = 0 ;
+		virtual void getSms() const = 0 ;
 };
 
 
@@ -40,7 +42,7 @@ class ConcreteBuilder : public Builder{
 	
 	private:
 		
-	Product* product;
+	ProductNotification* productNotification;
 	
 	public:
 	 ConcreteBuilder(){
@@ -48,27 +50,35 @@ class ConcreteBuilder : public Builder{
 	 }
 	 
 	 ~ConcreteBuilder(){
-	 	delete product;
+	 	delete productNotification;
 	 }
 	 
 	 void Reset(){
-	 	this->product = new Product();
+	 	this->productNotification = new ProductNotification();
 	 }
 	 
-	 void ProducerParteA()const override{
-	 	this->product->parts_.push_back("PART A ");
+	 void getAlert()const {
+	 	this->productNotification->itens.push_back("ALERT");
 	 }
 	 
-	 void ProducerParteB()const override{
-	 	this->product->parts_.push_back("PART B ");
+	 void getMessage()const {
+	 	this->productNotification->itens.push_back("MESSAGE");
 	 }
 	 
-	void ProducerParteC()const override{
-	 	this->product->parts_.push_back("PART C ");
+	void getDialog()const {
+	 	this->productNotification->itens.push_back("DIALOG");
+	 }
+
+	void getEmail()const {
+	 	this->productNotification->itens.push_back("EMAIL");
+	 }
+
+	void getSms()const {
+	 	this->productNotification->itens.push_back("SMS");
 	 }
 	 
-	 Product* getProduct(){
-	 	Product* result = this->product;
+	 ProductNotification* getProduct(){
+	 	ProductNotification* result = this->productNotification;
 	 	this->Reset();
 	 	return result ;
 	 }
@@ -86,39 +96,44 @@ class Director{
 			this->builder= builder;
 		}
 		
-		void BuildMinimalVariableProduct(){
-			this->builder->ProducerParteA();
+		void BuildBasic(){
+			this->builder->getAlert();
+			this->builder->getEmail();
 		}
 		
-		void BuildFullFeactureProduct(){
-			this->builder->ProducerParteA();
-			this->builder->ProducerParteB();
-			this->builder->ProducerParteC();
+		void BuildFull(){
+			this->builder->getAlert();
+			this->builder->getMessage();
+			this->builder->getDialog();
+			this->builder->getEmail();
+			this->builder->getSms();
 		}
 };
 
 void ClientCode(Director director){
 	ConcreteBuilder* builder = new ConcreteBuilder();
 	director.setBuilder(builder);
-	std::cout << " STANDARD BASIC PRODUCT : \n";
-	director.BuildMinimalVariableProduct();
+	std::cout << "\n";
+
+	std::cout << " BASIC NOTIFICATION : \n";
+	director.BuildBasic();
 	
-	Product* p = builder->getProduct();
-	p->ListPart();
+	ProductNotification* p = builder->getProduct();
+	p->listItens();
 	delete p ;
 	
-	std::cout << " STANDARD FULL FEACTURE PRODUCT :\n";
-	director.BuildFullFeactureProduct();
+	std::cout << " FULL NOTIFICATION :\n";
+	director.BuildFull();
 	
 	p = builder->getProduct();
-	p->ListPart();
+	p->listItens();
 	delete p ;
 	
-	std::cout << " CUSTOM PRODUCT :\n";
-	builder->ProducerParteA();
-	builder->ProducerParteC();
+	std::cout << " CUSTOM NOTIFICATION :\n";
+	builder->getAlert();
+	builder->getSms();
 	p=builder->getProduct();
-	p->ListPart();
+	p->listItens();
 	delete p ;
 	
 	delete builder ;
