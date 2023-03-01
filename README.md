@@ -19,8 +19,10 @@ to mature the understanding of design patterns and application architecture.
      [The example is a framework for a GUI environment where windows will be drawn on different operating systems.
      Each OS will have a dedicated factory for creating graphic abstractions.](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp)
   
-  -  Builder - 
-  
+  -  Builder 
+     This pattern separetes construction of complex object from its representation so that construction process can create different representation.
+     
+     [The example is a notification application which defines several ways to notify](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)
   -  Prototype - TODO
   
   -  Singleton - TODO
