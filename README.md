@@ -10,30 +10,22 @@ to mature the understanding of design patterns and application architecture.
 
 ### Creational patterns
 
-  -  Factory 
-     
-     [In this example a framework was implemented to custumize the exception handling that occurs in the application](https://github.com/sleevs/Design-Pattern/blob/master/creational/FactoryMethod.cpp)
-  
-  -  Abstract factory 
-  
-     [The example is a framework for a GUI environment where windows will be drawn on different operating systems.
-     Each OS will have a dedicated factory for creating graphic abstractions.](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp)
-  
-  -  Builder      
-     [The example is a notification application which defines several ways to notify](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)
-  -  Prototype - TODO
-  
-  -  Singleton - TODO
+  -  [Factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/FactoryMethod.cpp)
+  -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp) 
+  -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
+  -  [Prototype](https://github.com/sleevs/Design-Pattern/blob/master/creational/Prototype.cpp)
+  -  [Singleton](https://github.com/sleevs/Design-Pattern/blob/master/creational/Singleton.cpp)
 
 ### Structural patterns
 
-  -  Adapter - TODO
-  -  Bridge - 
-  -  Composite - 
-  -  Decorator - 
-  -  Facade - 
-  -  Flyweight - 
-  -  Proxy - TODO
+  -  [Adapter] (https://github.com/sleevs/Design-Pattern/blob/master/strucutural/AdapterPattern.cpp)
+  -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/BridgePattern.cpp)  
+  -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/CompositePattern.cpp)  
+  -  [Decorator](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/DecoratorPattern.cpp)  
+  -  Facade - TODO
+  -  Flyweight - TODO
+  -  [Proxy](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/ProxyPattern.cpp)
+
 
 ### Behavioral patterns
 
