@@ -18,25 +18,25 @@ to mature the understanding of design patterns and application architecture.
 
 ### Structural patterns
 
-  -  [Adapter] (https://github.com/sleevs/Design-Pattern/blob/master/strucutural/AdapterPattern.cpp)
-  -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/BridgePattern.cpp)  
-  -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/CompositePattern.cpp)  
-  -  [Decorator](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/DecoratorPattern.cpp)  
+  -  [Adapter](https://github.com/sleevs/Design-Pattern/blob/master/structural/AdapterPattern.cpp)
+  -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/structural/BridgePattern.cpp)  
+  -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/structural/CompositePattern.cpp)  
+  -  [Decorator](https://github.com/sleevs/Design-Pattern/blob/master/structural/DecoratorPattern.cpp)  
   -  Facade - TODO
   -  Flyweight - TODO
-  -  [Proxy](https://github.com/sleevs/Design-Pattern/blob/master/strucutural/ProxyPattern.cpp)
+  -  [Proxy](https://github.com/sleevs/Design-Pattern/blob/master/structural/ProxyPattern.cpp)
 
 
 ### Behavioral patterns
 
-  -  Chain of responsibility - 
-  -  Command - 
-  -  Iterator - 
-  -  Mediator - 
-  -  Memento - 
-  -  Observer - 
-  -  State - TODO
-  -  Strategy - TODO
-  -  Template method - TODO
-  -  Visitor - TODO
+  -  Chain of responsibility - TODO
+  -  Command - TODO
+  -  Iterator - TODO
+  -  Mediator - TODO
+  -  Memento - TODO
+  -  Observer - TODO
+  -  [State - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
+  -  [Strategy - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
+  -  [Template method - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/TemplateMethodPattern.cpp)
+  -  [Visitor - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/VisitorPattern.cpp)
 
