@@ -30,7 +30,7 @@ to mature the understanding of design patterns and application architecture.
 ### Behavioral patterns
 
   -  Chain of responsibility - TODO
-  -  Command - TODO
+  -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
   -  Iterator - TODO
   -  Mediator - TODO
   -  Memento - TODO
