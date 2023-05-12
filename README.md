@@ -29,9 +29,9 @@ to mature the understanding of design patterns and application architecture.
 
 ### Behavioral patterns
 
-  -  Chain of responsibility - TODO
+  -  [Chain of responsibility](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ChainOfResponsability.cpp)
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
-  -  Iterator - TODO
+  -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
   -  Mediator - TODO
   -  Memento - TODO
   -  Observer - TODO
