@@ -73,14 +73,14 @@ int main(){
 
     ConcreteMediator* mediator;
 
-    ConcreteColleague colaborador(mediator);
-    ConcreteColleague contratante(mediator);
+    ConcreteColleague freelancer(mediator);
+    ConcreteColleague client(mediator);
 
-    mediator->addColleague(&colaborador);
-    mediator->addColleague(&contratante);
+    mediator->addColleague(&client);
+    mediator->addColleague(&freelancer);
 
-    contratante.sendMessage("OLA TESTE ");
-    contratante.sendMessage("OI ");
-    
+    client.sendMessage("Hi!");
+    freelancer.sendMessage("how are you doing ?");
+
     return 0 ;
 }
