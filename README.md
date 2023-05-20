@@ -29,10 +29,10 @@ to mature the understanding of design patterns and application architecture.
 
 ### Behavioral patterns
 
-  -  [Chain of responsibility](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ChainOfResponsability.cpp)
+  -  [Chain of responsibility](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ChainOfResponsabilityPattern.cpp)
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
-  -  Mediator - TODO
+  -  [Mediator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MediatorPattern.cpp)
   -  Memento - TODO
   -  Observer - TODO
   -  [State - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
