@@ -29,7 +29,7 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
   -  [Mediator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MediatorPattern.cpp)
-  -  Memento - TODO
+  -  [Memento](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MementoPattern.cpp)
   -  [Observer](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ObserverPattern.cpp)
   -  [State - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
   -  [Strategy - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
