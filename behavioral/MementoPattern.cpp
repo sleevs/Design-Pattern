@@ -7,9 +7,9 @@ class Memento {
 
     private : std::string state ;
 
-    public : Memento( std::string& s) : state(s){}
+    public : Memento(const std::string& s) : state(s){}
 
-    std::string getState(){
+    public : std::string getState()const{
         return state ;
     }
 };
@@ -17,20 +17,21 @@ class Memento {
 
 class Originator{
 
-    private : std:: string state ;
+    private : std::string state ;
 
-    public : void setState(std::string& s){
+    public : void setState(const std::string& s){
         state = s ;
     }
 
-    public : std::string getState(){
+    public : std::string getState()const{
         return state ;
     }
-    Memento createMemento(){
+
+    public: Memento createMemento()const{
         return Memento(state);
     }
 
-    void restoreFromMemento(Memento m){
+    public: void restoreFromMemento(const Memento& m){
         state = m.getState();
     }
 };
@@ -40,12 +41,12 @@ class CareTaker{
 
     private : std::vector<Memento> mementos ;
 
-    public : void addMemento(Memento& m){
+    public : void addMemento(const Memento& m){
         mementos.push_back(m);
     }
 
-    Memento getMemento(int index){
-        return mementos(index);
+    public : Memento getMemento(int index)const {
+        return mementos[index];
     }
 };
 
@@ -56,18 +57,18 @@ int main(){
     Originator originator ;
     CareTaker careTaker ;
 
-    originator.setState("INITIAL STATE");
-    std::cout << "INITIAL STATE" << originator.getState() << std::endl ;
+    originator.setState("INITIAL STATE N");
+    std::cout << originator.getState() << std::endl ;
 
     careTaker.addMemento(originator.createMemento());
 
-    originator.setState("NEW STATE");
-    std::cout << "NEW STATE" << originator.getState() << std::endl ;
+    originator.setState("NEW STATE N2");
+    std::cout << originator.getState() << std::endl ;
 
     careTaker.addMemento(originator.createMemento());
 
     originator.restoreFromMemento(careTaker.getMemento(0));
-    std::cout<< " RESTORE STATE " << originator.getState << std::endl ;
+    std::cout<< "RESTORE STATE : " << originator.getState() << std::endl ;
 
     return 0 ;
 }
