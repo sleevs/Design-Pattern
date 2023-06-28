@@ -8,12 +8,12 @@ This a demostration of design patterns with objective to mature the understandin
 
   -  [Factory Method](https://github.com/sleevs/Design-Pattern/blob/master/creational/FactoryMethod.cpp)
 
-    - Problem: Create objects in which the type of object is made in runtime
+    - Problem: Create objects in which the type of object is made in runtime.
     
-    - Motivation: Selecting which subclass to use ;
-                  Loosely coucpling the underlying creation;
+    - Motivation: Selecting which subclass to use.
+                  Loosely coucpling the underlying creation implementation.
                   
-    - Solution: Some solution is produce instances of objects based on a set of input parameters focued on supporting class polymorphism. 
+    - Solution: Some solution is produce instances of objects based on a set of input parameters focused on supporting class polymorphism. 
   -  
   -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp) 
   -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
