@@ -13,7 +13,7 @@ This a demostration of design patterns with objective to mature the understandin
                   Loosely coucpling the underlying creation implementation.
       - Solution: Some solution is produce instances of objects based on a set of input parameters focused on supporting class polymorphism.
 
-  -  
+   
   -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp) 
   -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
   -  [Prototype](https://github.com/sleevs/Design-Pattern/blob/master/creational/Prototype.cpp)
