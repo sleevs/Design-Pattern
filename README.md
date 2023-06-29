@@ -28,7 +28,7 @@ This a demostration of design patterns with objective to mature the understandin
 
       - Problem: You want to transparently and dynamically add responsabilities to objects without affecting other objects.
       - Motivation: Some times we want to add responsabilities to individual objects but no entire class.
-      - SOlution: Decorator approch allow attach additional  responsabilities to an object dynamically  and provide a flexible alternative to SubClass for extending functionality.
+      - Solution: Decorator approch allow attach additional  responsabilities to an object dynamically  and provide a flexible alternative to SubClass for extending functionality.
         
   -  [Facade](https://github.com/sleevs/Design-Pattern/blob/master/structural/FacadePattern.cpp)
   -  [Flyweight](https://github.com/sleevs/Design-Pattern/blob/master/structural/FlyweightPattern.cpp)
