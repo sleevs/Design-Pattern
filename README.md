@@ -8,12 +8,11 @@ This a demostration of design patterns with objective to mature the understandin
 
   -  [Factory Method](https://github.com/sleevs/Design-Pattern/blob/master/creational/FactoryMethod.cpp)
 
-    - Problem: Create objects in which the type of object is made in runtime.
-    
-    - Motivation: Selecting which subclass to use.
+      - Problem: Create objects in which the type of object is made in runtime.
+      - Motivation: Selecting which subclass to use.
                   Loosely coucpling the underlying creation implementation.
-                  
-    - Solution: Some solution is produce instances of objects based on a set of input parameters focused on supporting class polymorphism. 
+      - Solution: Some solution is produce instances of objects based on a set of input parameters focused on supporting class polymorphism.
+
   -  
   -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp) 
   -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
@@ -25,7 +24,12 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Adapter](https://github.com/sleevs/Design-Pattern/blob/master/structural/AdapterPattern.cpp)
   -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/structural/BridgePattern.cpp)  
   -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/structural/CompositePattern.cpp)  
-  -  [Decorator](https://github.com/sleevs/Design-Pattern/blob/master/structural/DecoratorPattern.cpp)  
+  -  [Decorator](https://github.com/sleevs/Design-Pattern/blob/master/structural/DecoratorPattern.cpp)
+
+      - Problem: You want to transparently and dynamically add responsabilities to objects without affecting other objects.
+      - Motivation: Some times we want to add responsabilities to individual objects but no entire class.
+      - SOlution: Decorator approch allow attach additional  responsabilities to an object dynamically  and provide a flexible alternative to SubClass for extending functionality.
+        
   -  [Facade](https://github.com/sleevs/Design-Pattern/blob/master/structural/FacadePattern.cpp)
   -  [Flyweight](https://github.com/sleevs/Design-Pattern/blob/master/structural/FlyweightPattern.cpp)
   -  [Proxy](https://github.com/sleevs/Design-Pattern/blob/master/structural/ProxyPattern.cpp)
