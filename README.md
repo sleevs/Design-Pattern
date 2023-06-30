@@ -48,3 +48,7 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Template method - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/TemplateMethodPattern.cpp)
   -  [Visitor - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/VisitorPattern.cpp)
 
+      - Problem: You have a set class that represent different type of objects , or perform different operations or apply different algorithms on these objects. It's violates the Open-Clodes Principle(SOLID) and requires modifying all class whenever a new operation is added.
+      - Motivation: The pattern promotes extensibility by allowing the addition of new operations without modifying the existing class (Open-Closed Principle) . This pattern also separate the behavior from the object structure allows to define new operationsor behavior external to the objects themselves.
+      - Solution: Provide a way to extends the behavior of a set of objects without modifying their classes . It promotes maintainability , flexibility , and separation of concerns by keeping the objects focused on their core responsailities and allowing the addition of new behavior ;
+
