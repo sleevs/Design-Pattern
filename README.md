@@ -17,6 +17,11 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp) 
   -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
   -  [Prototype](https://github.com/sleevs/Design-Pattern/blob/master/creational/Prototype.cpp)
+
+        - Problem: There are scenarios where creating new objects can ben resource-intensive and time-consuming process. When an object requires complex initialization or involves costly database operation  , creating a new instance from scratch can be inifficient.
+      - Motivation: Providing a mechanism to create new objects by cloning or copying existing object . The Prototype pattern aims to improve performance , reduce resource consumption , and promote code reusability.
+      - Solution: Performance improvement , reduce code duplication , flexibility , simplified. Overall , the Proptotype pattern address the problem of resource-intensive object creation , motivates efficient object cloning and offers a solution that improves performance and promotes code reusability.
+        
   -  [Singleton](https://github.com/sleevs/Design-Pattern/blob/master/creational/Singleton.cpp)
 
 ### Structural patterns
