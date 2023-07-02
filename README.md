@@ -15,8 +15,6 @@ This a demostration of design patterns with objective to mature the understandin
 
            Selecting which subclass to use.
                   Loosely coucpling the underlying creation implementation.
-      - Solution:
-      
            Some solution is produce instances of objects based on a set of input parameters focused on supporting class polymorphism.
 
    
@@ -30,9 +28,7 @@ This a demostration of design patterns with objective to mature the understandin
       - Motivation:
 
            Providing a mechanism to create new objects by cloning or copying existing object . The Prototype pattern aims to improve performance , reduce resource consumption , and promote code reusability.
-      - Solution:
-
-           Performance improvement , reduce code duplication , flexibility , simplified. Overall , the Proptotype pattern address the problem of resource-intensive object creation , motivates efficient object cloning and offers a solution that improves performance and promotes code reusability.
+                Performance improvement , reduce code duplication , flexibility , simplified. Overall , the Proptotype pattern address the problem of resource-intensive object creation , motivates efficient object cloning and offers a solution that improves performance and promotes code reusability.
         
   -  [Singleton](https://github.com/sleevs/Design-Pattern/blob/master/creational/Singleton.cpp)
 
@@ -40,7 +36,16 @@ This a demostration of design patterns with objective to mature the understandin
 
   -  [Adapter](https://github.com/sleevs/Design-Pattern/blob/master/structural/AdapterPattern.cpp)
   -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/structural/BridgePattern.cpp)  
-  -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/structural/CompositePattern.cpp)  
+  -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/structural/CompositePattern.cpp)
+
+      - Problem:
+
+           There are scenario where we need to work with a hierachical strucuture that consist of both individual objets and collections of objets. Threating individual object and goups of objects differently can lead to complex and repetitive code.
+        
+      - Motivation:
+
+          The Composite pattern provide a unified way to working tih individual objects and groups of objects . It allows you code and enabling transparency in manipulation of hirarchical structure .
+        
   -  [Decorator](https://github.com/sleevs/Design-Pattern/blob/master/structural/DecoratorPattern.cpp)
 
       - Problem:
@@ -49,8 +54,6 @@ This a demostration of design patterns with objective to mature the understandin
       - Motivation:
       
            Some times we want to add responsabilities to individual objects but no entire class.
-      - Solution:
-
            Decorator approch allow attach additional  responsabilities to an object dynamically  and provide a flexible alternative to SubClass for extending functionality.
         
   -  [Facade](https://github.com/sleevs/Design-Pattern/blob/master/structural/FacadePattern.cpp)
@@ -77,7 +80,5 @@ This a demostration of design patterns with objective to mature the understandin
       - Motivation:
 
            The pattern promotes extensibility by allowing the addition of new operations without modifying the existing class (Open-Closed Principle) . This pattern also separate the behavior from the object structure allows to define new operationsor behavior external to the objects themselves.
-      - Solution:
-
            Provide a way to extends the behavior of a set of objects without modifying their classes . It promotes maintainability , flexibility , and separation of concerns by keeping the objects focused on their core responsailities and allowing the addition of new behavior.
 
