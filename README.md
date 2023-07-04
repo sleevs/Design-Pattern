@@ -69,16 +69,16 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Mediator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MediatorPattern.cpp)
   -  [Memento](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MementoPattern.cpp)
   -  [Observer](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ObserverPattern.cpp)
-  -  [State - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
-  -  [Strategy - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
-  -  [Template method - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/TemplateMethodPattern.cpp)
+  -  [State - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
+  -  [Strategy - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
+  -  [Template method - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/TemplateMethodPattern.cpp)
 
       - Problem:
 
       - Motivation:
 
           
-  -  [Visitor - REFACTORY](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/VisitorPattern.cpp)
+  -  [Visitor - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/VisitorPattern.cpp)
 
       - Problem:
 
