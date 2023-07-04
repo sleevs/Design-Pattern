@@ -75,7 +75,11 @@ This a demostration of design patterns with objective to mature the understandin
 
       - Problem:
 
+        There are situations where we need to define an algorithm with fixed structure but with certain steps that can vary across implementation. If we implement the entire algorithm in each SubClass , it can lead to code duplication and maintenance challenge.
+
       - Motivation:
+
+        The Template Method pattern define the skeleton of an algorithm in an operation , deferring some steps to SubClass and let's the SubClass redefine certain steps of algorithm without changing the algorithm's structure.
 
           
   -  [Visitor - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/VisitorPattern.cpp)
