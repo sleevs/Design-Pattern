@@ -31,7 +31,17 @@ This a demostration of design patterns with objective to mature the understandin
                 Performance improvement , reduce code duplication , flexibility , simplified. Overall , the Proptotype pattern address the problem of resource-intensive object creation , motivates efficient object cloning and offers a solution that improves performance and promotes code reusability.
         
   -  [Singleton](https://github.com/sleevs/Design-Pattern/blob/master/creational/Singleton.cpp)
+      
+      - Problem:
+      
+           There scenarios where we need to ensure that a class has only one instance throughout the entire application.
+            For example , when dealing with shared resource , configuration setting or objects that are expensive to create. So then multiple instance can lead to inconsistance behavior and resource wastage or conclicts.
+        Ensuring a single instance of class become a challenging with multiple components or threads requires acces to it. 
+        
+      - Motivation:
 
+          Singleton pattern is to provide a centralized and controlled way of creating and accessing instance of a class. It ensures that the instance is shared among multiple components , maintains a global state or manager resources effeciently.
+   
 ### Structural patterns
 
   -  [Adapter](https://github.com/sleevs/Design-Pattern/blob/master/structural/AdapterPattern.cpp)
