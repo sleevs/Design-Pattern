@@ -45,7 +45,16 @@ This a demostration of design patterns with objective to mature the understandin
 ### Structural patterns
 
   -  [Adapter](https://github.com/sleevs/Design-Pattern/blob/master/structural/AdapterPattern.cpp)
-  -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/structural/BridgePattern.cpp)  
+  -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/structural/BridgePattern.cpp)
+
+       - Problem:
+
+         There are situations where we have an abstraction that has muliple implementation. If we directly couple the abastraction with implementation any change to either the abstraction or the implementation would require modifying the other , leading to a lack of flexibility and increased complexity.
+   
+       - Motivation:
+
+         The Bridge pattern is to separate the abstraction from its implementation , allowing them to evolve independently. It enable loose coupling between the abstraction and its implementation , promoting flexibility , extensibility and easier maintenance.
+         
   -  [Composite](https://github.com/sleevs/Design-Pattern/blob/master/structural/CompositePattern.cpp)
 
       - Problem:
