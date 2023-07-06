@@ -90,6 +90,14 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Observer](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ObserverPattern.cpp)
   -  [State - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
   -  [Strategy - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
+        
+        - Problem:
+
+          There are situations where we need to implement different algorithms or behaviors , that can be dynamically selected at runtime . Any way , if we hard-code these algorithms or behaviors directly into the client cides , it can lead to code duplication, code hard and inflexibility , difficulty in modifying or adding new behaviors.
+
+        - Motivation:
+
+          Strategy pattern provide a way to encaptulation and interchange algorithms or behaviors at runtime. It allows us to define a familty of algorithms or behaviors , encapsulates each one separetely and make then interchangeable without modifying the client code . This promotes code reuse , flexbility and easier maintenance .
   -  [Template method - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/TemplateMethodPattern.cpp)
 
       - Problem:
