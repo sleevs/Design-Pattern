@@ -93,7 +93,7 @@ This a demostration of design patterns with objective to mature the understandin
         
         - Problem:
 
-          There are situations where we need to implement different algorithms or behaviors , that can be dynamically selected at runtime . Any way , if we hard-code these algorithms or behaviors directly into the client cides , it can lead to code duplication, code hard and inflexibility , difficulty in modifying or adding new behaviors.
+          There are situations where we need to implement different algorithms or behaviors , that can be dynamically selected at runtime . Any way , if we hard-code these algorithms or behaviors directly into the client codes , it can lead to code duplication, code hard and inflexibility , difficulty in modifying or adding new behaviors.
 
         - Motivation:
 
