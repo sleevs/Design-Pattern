@@ -53,6 +53,15 @@ This a demostration of design patterns with objective to mature the understandin
 ### Structural patterns
 
   -  [Adapter](https://github.com/sleevs/Design-Pattern/blob/master/structural/AdapterPattern.cpp)
+       
+       - Problem:
+
+         There are situations where we need to integrate existing class or component that have incompatible interface . There classes or components may come from different libraries , frameworks or legacy systems . However , directly using them togheter can result  in code duplication , tight coupling and the inability to work seamlessly with each other.
+   
+       - Motivation:
+
+          Adapter pattern provide a way to make incompatible interfaces compatible and enable objects with different interfaces to work together. It allows for the reuse of existing classes or components by adapting them to fit into a different context or interface. This promotes interoperability between differents components.
+         
   -  [Bridge](https://github.com/sleevs/Design-Pattern/blob/master/structural/BridgePattern.cpp)
 
        - Problem:
