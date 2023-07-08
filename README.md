@@ -18,7 +18,15 @@ This a demostration of design patterns with objective to mature the understandin
            Some solution is produce instances of objects based on a set of input parameters focused on supporting class polymorphism.
 
    
-  -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp) 
+  -  [Abstract factory](https://github.com/sleevs/Design-Pattern/blob/master/creational/AbstractFactory.cpp)
+       - Problem:
+          
+         There are scenarios where we need to create families of related or dependent objects . Any way , directly instantianting these objects or tightly coupling them in client code can lead to dependencies and code fragility. Moreover , introducing new families of objects or modifying existing one becomes difficult and erro-prone.
+         
+       - Motivation:
+
+         Abstract Factory pattern provide an interface for creating families of related or dependent objects without sprcifying their concrete class . It decouples the client code from the specific implementations and allows for easy substitution of object families . It promotes flexibility , extensibility and maintainability.
+         
   -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
   -  [Prototype](https://github.com/sleevs/Design-Pattern/blob/master/creational/Prototype.cpp)
 
