@@ -104,7 +104,17 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
   -  [Mediator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MediatorPattern.cpp)
   -  [Memento](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MementoPattern.cpp)
+  -  [Interpreter - TO DO ]()
   -  [Observer](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ObserverPattern.cpp)
+    
+      - Problem:
+   
+        There are scenarios where we nees to stablish a communication channel between multiple objects , where change in one object need to notified to other dependent objects. In any way, directly coupling these objects together can lead to tight coupling and a lack of flexibility , as each object need to know explicity about the others . Additionally , it become challenging to add or remove dependencies dynamically.
+
+      - Motivation:
+   
+        Observer pattern provide a loosely coupled and flexible communication mechanism between objects . It enables ont-to-may communication where multiple observes can be notified of changes in a subject without being tightly coupled.
+          
   -  [State - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
   -  [Strategy - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
         
@@ -115,6 +125,7 @@ This a demostration of design patterns with objective to mature the understandin
         - Motivation:
 
           Strategy pattern provide a way to encaptulation and interchange algorithms or behaviors at runtime. It allows us to define a familty of algorithms or behaviors , encapsulates each one separetely and make then interchangeable without modifying the client code . This promotes code reuse , flexbility and easier maintenance .
+          
   -  [Template method - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/TemplateMethodPattern.cpp)
 
       - Problem:
