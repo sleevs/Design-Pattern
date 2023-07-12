@@ -27,7 +27,19 @@ This a demostration of design patterns with objective to mature the understandin
 
          Abstract Factory pattern provide an interface for creating families of related or dependent objects without sprcifying their concrete class . It decouples the client code from the specific implementations and allows for easy substitution of object families . It promotes flexibility , extensibility and maintainability.
          
-  -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)      
+  -  [Builder](https://github.com/sleevs/Design-Pattern/blob/master/creational/BuilderPattern.cpp)
+
+      - Problem:
+      
+        There are situations where we need to create complex objects that involve multiple step or parameters . However , directly instantiating these objects or using multiple constructors with a long list of parameters can lead to code that is hard to read , understand and maintain . Additionally , if the order or combinations of parameters is not consistent it becomes erro-prone .
+        
+      - Motivation:
+
+        Builder pattern provide a solution for creating complex objects step-by-step or using a fluent interface . It allows you to separate the construction of an object from its representation , making the process more flexible and manageable.
+
+           
+
+   
   -  [Prototype](https://github.com/sleevs/Design-Pattern/blob/master/creational/Prototype.cpp)
 
         - Problem:
