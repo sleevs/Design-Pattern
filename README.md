@@ -106,6 +106,15 @@ This a demostration of design patterns with objective to mature the understandin
         
   -  [Facade](https://github.com/sleevs/Design-Pattern/blob/master/structural/FacadePattern.cpp)
   -  [Flyweight](https://github.com/sleevs/Design-Pattern/blob/master/structural/FlyweightPattern.cpp)
+
+      - Problem:
+      
+        There are situations where we need to change a large number of similar object that share common properties and behavior.  Anyway , creating and managing a separate object for each instance can lead to excessive memory usage and reduce performance . This problem become more prominent when dealing with large sacale systems or resource-insensive application .
+        
+      - Motivation:
+
+        Flyweight pattern is to optimize memory usage and improve performance by sharing common state among multiple similar objects . By separating the intrinsinc (shared) and extrinsic (unique) state of objects , the Flyweight pattern reduce memory footprint and enhances the effeciency of object creation and manipulation .
+         
   -  [Proxy](https://github.com/sleevs/Design-Pattern/blob/master/structural/ProxyPattern.cpp)
 
 
