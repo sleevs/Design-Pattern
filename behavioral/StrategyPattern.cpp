@@ -1,163 +1,58 @@
 #include<iostream>
+#include <memory>
 
 using namespace std ;
 
 
-class ComportamentoOrganizar {
 
-	public:
-		virtual void sort() const = 0 ;
-};
+class Strategy {
 
-class Merge: public ComportamentoOrganizar {
-
-		public:
-		virtual void sort() const  {
-
-	std::cout << "\n" ;
-			cout << " MERGE CONSTANTE()" ;
-				std::cout << "\n" ;
-		}
-};
-
-class Rapido: public ComportamentoOrganizar {
-
-	public:
-		virtual void sort() const  {
-
-			cout << "RAPIDO sort()";
-		}
+ public : virtual void algorithm() = 0 ;
 
 };
 
 
-class ComportamentoBuscar {
+class ConcreteStrategyA: public  Strategy {
 
-	public:
-		virtual void buscar() const  = 0 ;
+	public : void algorithm() override {
+		std::cout << " ESTRATEGIA 1 " <<std::endl;
+	}
 };
 
 
-class Heap: public ComportamentoOrganizar {
 
-	public:
-		virtual void sort() const  {
+class ConcreteStrategyB	: public  Strategy {
 
-			cout << " HEAP SORT()" ;
-		}
-};
-
-class Sequencial: public ComportamentoBuscar {
-
-	public:
-
-		virtual void buscar() const  {
-
-
-
-			cout << " Sequencial buscar()";
-				std::cout << "\n" ;
-		}
+	public : void algorithm() override {
+		std::cout << " ESTRATEGIA 2 " <<std::endl;
+	}
 };
 
 
-class ArvoreBinaria: public ComportamentoBuscar {
 
-	public:
-		virtual void buscar() const  {
+class Context {
 
-	std::cout << "\n" ;
-			cout << " ArvoreBinaria buscar()" ;
-				std::cout << "\n" ;
-		}
+	private : std::unique_ptr<Strategy> strategy_ ;
+
+	public: void  setStrategy(std::unique_ptr<Strategy> strategy){
+		strategy_ = std::move(strategy);
+	}
+
+	public: void executeStrategy(){
+		strategy_->algorithm();
+	}
 };
 
 
-class HashTable: public ComportamentoBuscar {
 
+int main(){
 
-	public:
-		virtual void buscar() const  {
+	Context context ;
+	std::unique_ptr<ConcreteStrategyA> strategyA = std::make_unique<ConcreteStrategyA>();
 
-			cout << " hashtable buscar()";
-		}
-
-};
-
-
-class Colecao {
-
-
-	private:
-		ComportamentoOrganizar * ponteiroOrganizar ;
-		ComportamentoBuscar * ponteiroBuscar ;
-
-
-	public:
-		Colecao() {
-		}
-
-		void setOrganizar(ComportamentoOrganizar* co) {
-			ponteiroOrganizar = co ;
-		}
-
-		void setBuscar(ComportamentoBuscar* cb) {
-
-			ponteiroBuscar =  cb ;
-
-		}
-
-
-		void sort() const  {
-
-			ponteiroOrganizar->sort();
-		}
-
-		void buscar() const  {
-
-			ponteiroBuscar->buscar();
-		}
-
-};
-
-
-int main(void) {
-
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-
-	std::cout << " JSN - ENGENHARIA DE SOFTWARE C++ - DESIGN PATTERN STRATEGY \n" ;
-
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-
-
-	Merge merge ;
-	Rapido rapido ;
-	Heap heap ;
-
-	Sequencial sequencial ;
-	ArvoreBinaria arvoreBinaria ;
-	HashTable hashTable ;
-
-	Colecao colecaoA ;
-
-	colecaoA.setOrganizar(&merge);
-	colecaoA.sort();
-
-
-	Colecao colecaoB;
-	colecaoB.setBuscar(&arvoreBinaria);
-	colecaoB.buscar();
-
-
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-	std::cout << "\n" ;
-	std::cout << "\n" ;
+	 context.setStrategy(std::move(strategyA));
+	 context.executeStrategy();
 
 	return 0 ;
 }
+
