@@ -137,7 +137,7 @@ This a demostration of design patterns with objective to mature the understandin
         Observer pattern provide a loosely coupled and flexible communication mechanism between objects . It enables ont-to-may communication where multiple observes can be notified of changes in a subject without being tightly coupled.
           
   -  [State - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
-  -  [Strategy - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
+  -  [Strategy](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
         
         - Problem:
 
