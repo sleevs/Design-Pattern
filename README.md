@@ -124,6 +124,15 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
   -  [Mediator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MediatorPattern.cpp)
+
+      - Problem:
+   
+        There are situations where a set of objects need to communicate with each other, but direcly coupling them togheter can lead to complex dependencies and tight coupling. This can result in code that is difficult to understand , maintain and extends . Additionally managing the communication between multiple objects becomes challenging when they have indirect or complex relationships.
+
+      - Motivation:
+   
+        Mediator pattern is to provide a central mediator object that encapsulates the communication logic between a set of related objects . It promotes loose coupling between thse objects and simplifies their interaction by removing direct dependencies.
+         
   -  [Memento](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MementoPattern.cpp)
   -  [Interpreter - TO DO ]()
   -  [Observer](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ObserverPattern.cpp)
