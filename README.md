@@ -123,6 +123,15 @@ This a demostration of design patterns with objective to mature the understandin
   -  [Chain of responsibility](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ChainOfResponsabilityPattern.cpp)
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
+
+       - Problem:
+   
+        There are situations where we need to transverse over a collection of objects or elements. However , different collections may have different internal structures and access mechanisms , making it cumbersome to provide a uniform way of iterating over them . Moreover , exposing the internal structure of a collection can violate encapsulation principle and hinder code maintainability.
+
+      - Motivation:
+   
+        Iterator pattern provide a uniform way of traversing or iterating over elements in different collections without exposing their internal structure. It abstracts the iteration process and decouples it from the specific collection implementation.
+        
   -  [Mediator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MediatorPattern.cpp)
 
       - Problem:
