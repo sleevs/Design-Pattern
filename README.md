@@ -121,6 +121,15 @@ This a demostration of design patterns with objective to mature the understandin
 ### Behavioral patterns
 
   -  [Chain of responsibility](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ChainOfResponsabilityPattern.cpp)
+
+      - Problem:
+   
+        There are situations where a request needs to be processed by multiple objects , but the specific object that can handle the request may vary dependending on the request itself or the state of system . In any way , directly coupling the requested and handler objects togheter can result in tight coupling and inflexibility , as it become difficult to add or remove handlers dynamically or modify the dandling order.
+
+      - Motivation:
+   
+        Chain of Responsability pattern provides a solution for decoupling the request from the handler objects and establishing a cahin of handlers. It allow for the request to be passed though the chain until a suitable handler is found.
+        
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
 
