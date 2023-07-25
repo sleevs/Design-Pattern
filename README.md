@@ -131,6 +131,15 @@ This a demostration of design patterns with objective to mature the understandin
         Chain of Responsability pattern provides a solution for decoupling the request from the handler objects and establishing a cahin of handlers. It allow for the request to be passed though the chain until a suitable handler is found.
         
   -  [Command](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/CommandPattern.cpp)
+
+      - Problem:
+   
+        There are situations where we need to decouple the sender of a request from the receiver , or when we want to support operations like undo/rendo , logging or queuing of requests ca result in tight coupling and make it challenging to extend or modify the behavior without modifying the sender.
+
+      - Motivation:
+   
+        The Command pattern provide a solution for coupling the sender and receiver of request by encapsulating a request as an object. This allow for parameterization requests , queuing of requests , logging and support for undo/redo operations. The Command pattern promotes loose coupling , flexibility and extensibility in handling requests.
+    
   -  [Iterator](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/IteratorPattern.cpp)
 
        - Problem:
