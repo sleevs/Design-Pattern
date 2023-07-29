@@ -161,7 +161,25 @@ This a demostration of design patterns with objective to mature the understandin
         Mediator pattern is to provide a central mediator object that encapsulates the communication logic between a set of related objects . It promotes loose coupling between thse objects and simplifies their interaction by removing direct dependencies.
          
   -  [Memento](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/MementoPattern.cpp)
+
+     - Problem:
+   
+        There are situations where we need to capturing and restore the state of an object or system. However , directly exposing the internal state of the object or system can violate encapsulation princicple and compromise data integrity . Additionally maintaning the history of state change can be complex and resource-intensive.
+
+      - Motivation:
+
+       This pattern is to provide a solution for capturing and restoring the state of an object or system while preseving encapsulation . It allows us to externalize the state of an object into managed and restored as need . The Memmento pattern promotes data integrity , versioning and undo/rendo functionality.
+   
   -  [Interpreter - TO DO ]()
+
+      - Problem:
+   
+        There are scenario where we need to interpret and evaluete complex expressions or language grammar rules. Directly implementing these interpretations using procedural code can lead to code that is hard to understand , maintain and extend. Additionally the expression evaluation logic can become tightly coucled with  the client code , making it challenging to andd new expressions or change the grammar rules.
+
+      - Motivation:
+
+        Provide a solution for interpreting and evaluating expression or language grammar rules in a more structured and modular way . It allows you to define a grammar for the language and provides a way to interpret and evaluate the expressions based on that grammar . This promotes code reusability , modularity and flexibility in handling complex expressions.
+   
   -  [Observer](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/ObserverPattern.cpp)
     
       - Problem:
@@ -173,6 +191,15 @@ This a demostration of design patterns with objective to mature the understandin
         Observer pattern provide a loosely coupled and flexible communication mechanism between objects . It enables ont-to-may communication where multiple observes can be notified of changes in a subject without being tightly coupled.
           
   -  [State - REFACTORY - TO DO](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StatePattern.cpp)
+
+      - Problem:
+   
+        There are scenario where an objects behavior needs to change based on its internal state. However , directly implementation conditional statements based on the state can lead to complex and erro-promote code. Addicionally , adding new states or modifying the behavior for each state can resut in cide that is difficult to maintain and extend.
+
+      - Motivation:
+
+        THe state patterm is to provide a solution for managing an object's bahaxior based on its internal state. It allows you encapsulation each state in a separate class , making the behavior more modular and promoting code reusability . The State pattern is especiall useful when an object's behavior change dynamically depending on is state. 
+   
   -  [Strategy](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
         
         - Problem:
