@@ -105,6 +105,18 @@ This a demostration of design patterns with objective to mature the understandin
            Decorator approch allow attach additional  responsabilities to an object dynamically  and provide a flexible alternative to SubClass for extending functionality.
         
   -  [Facade](https://github.com/sleevs/Design-Pattern/blob/master/structural/FacadePattern.cpp)
+
+     
+      - Problem:
+      
+        There are situations where we need to interact with a complex system or subsystem often consisting of numerous classes and components with intricate interactions. This complexity can make the system different to undstand , use and maintain.
+        
+      - Motivation:
+
+        Facade pattern is to provide a simple and unified interface to a complex system or subsystem. It abstracts the complexy and inner worrings of the system behind a sinple , easy-to-use interface. This simplies the clients interactions with the system reduce dependecies and enhances code readability and maintainability.
+
+      
+        
   -  [Flyweight](https://github.com/sleevs/Design-Pattern/blob/master/structural/FlyweightPattern.cpp)
 
       - Problem:
@@ -116,6 +128,14 @@ This a demostration of design patterns with objective to mature the understandin
         Flyweight pattern is to optimize memory usage and improve performance by sharing common state among multiple similar objects . By separating the intrinsinc (shared) and extrinsic (unique) state of objects , the Flyweight pattern reduce memory footprint and enhances the effeciency of object creation and manipulation .
          
   -  [Proxy](https://github.com/sleevs/Design-Pattern/blob/master/structural/ProxyPattern.cpp)
+
+      - Problem:
+      
+        There are situations where we need to control access to an object , add additional functionality or optimize it's behavior without modifying the object itself . However , directly accessing or modifying the object way no be feasible or might violate the principle of separation of converns.
+        
+      - Motivation:
+
+        Proxy pattern is to provide a solution for controlling access to an object by acting as an intermediary or placeholder. It allows us to create a proxy object that acts as representative or surrogate for real object. The Proxy pattern promotes additional layer of control and encapapsulation , making it useful for scenarios like access control , catching , lazy loading and logging.
 
 
 ### Behavioral patterns
