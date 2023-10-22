@@ -164,7 +164,7 @@ This a demostration of design patterns with objective to mature the understandin
 
        - Problem:
    
-        There are situations where we need to transverse over a collection of objects or elements. However , different collections may have different internal structures and access mechanisms , making it cumbersome to provide a uniform way of iterating over them . Moreover , exposing the internal structure of a collection can violate encapsulation principle and hinder code maintainability.
+        There are situations where we need to transverse over a collection of objects or elements. However , different collections may have different internal            structures and access mechanisms , making it cumbersome to provide a uniform way of iterating over them . Moreover , exposing the internal structure of a         collection can violate encapsulation principle and hinder code maintainability.
 
       - Motivation:
    
@@ -188,7 +188,9 @@ This a demostration of design patterns with objective to mature the understandin
 
       - Motivation:
 
-       This pattern is to provide a solution for capturing and restoring the state of an object or system while preseving encapsulation . It allows us to externalize the state of an object into managed and restored as need . The Memmento pattern promotes data integrity , versioning and undo/rendo functionality.
+       This pattern is to provide a solution for capturing and restoring the state of an object or system while preseving encapsulation.
+       It allows us to externalize the state of an object into managed and restored as need . The Memento pattern promotes data integrity,
+       versioning and undo/rendo functionality.
    
   -  [Interpreter - TO DO ]()
 
@@ -218,7 +220,7 @@ This a demostration of design patterns with objective to mature the understandin
 
       - Motivation:
 
-        THe state patterm is to provide a solution for managing an object's bahaxior based on its internal state. It allows you encapsulation each state in a separate class , making the behavior more modular and promoting code reusability . The State pattern is especiall useful when an object's behavior change dynamically depending on is state. 
+        The state patterm is to provide a solution for managing an object's bahavior based on its internal state. It allows you encapsulation each state in a separate class , making the behavior more modular and promoting code reusability . The State pattern is especiall useful when an object's behavior change dynamically depending on is state. 
    
   -  [Strategy](https://github.com/sleevs/Design-Pattern/blob/master/behavioral/StrategyPattern.cpp)
         
@@ -245,9 +247,9 @@ This a demostration of design patterns with objective to mature the understandin
 
       - Problem:
 
-           You have a set class that represent different type of objects , or perform different operations or apply different algorithms on these objects. It's violates the Open-Clodes Principle(SOLID) and requires modifying all class whenever a new operation is added.
+           You have a set class that represent different type of objects , or perform different operations or apply different algorithms on these objects. It's violates the Open-Clodes Principle and requires modifying all class whenever a new operation is added.
       - Motivation:
 
-           The pattern promotes extensibility by allowing the addition of new operations without modifying the existing class (Open-Closed Principle) . This pattern also separate the behavior from the object structure allows to define new operationsor behavior external to the objects themselves.
+           The pattern promotes extensibility by allowing the addition of new operations without modifying the existing class (Open-Closed Principle) . This pattern also separate the behavior from the object structure allows to define new operations or behavior external to the objects themselves.
            Provide a way to extends the behavior of a set of objects without modifying their classes . It promotes maintainability , flexibility , and separation of concerns by keeping the objects focused on their core responsailities and allowing the addition of new behavior.
 
